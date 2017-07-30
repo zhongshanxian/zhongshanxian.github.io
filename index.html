@@ -103,7 +103,7 @@
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">.boxpar:before,</div><div class="line">.boxpar:after &#123;</div><div class="line">  content: "";</div><div class="line">  display: table;/*创建一个匿名的“table-cell”元素*/</div><div class="line">&#125;</div><div class="line">.boxpar:after &#123;</div><div class="line">  clear: both;/*防止子元素的底部的外边距塌陷*/</div><div class="line">&#125;</div><div class="line">.boxpar&#123;/*IE6和7*/</div><div class="line">  *zoom: 1;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
 </ul>
-<p><a href="http://www.w3cplus.com/css/advanced-html-css-lesson2-detailed-css-positioning.html" target="_blank" rel="external">more info</a></p>
+<p><a href="http://www.w3cplus.com/css/advanced-html-css-lesson2-detailed-css-positioning.html" target="_blank" rel="external">more info</a><br><a href="https://github.com/zhongshanxian/SUM/blob/master/test/floatposition.html" target="_blank" rel="external">示例代码</a></p>
 <h2 id="Notes："><a href="#Notes：" class="headerlink" title="Notes："></a>Notes：</h2><p>1.三栏的父元素，不能直接规定width<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">width</span><span class="selector-pseudo">:auto</span>;<span class="comment">/*根据里面的三栏宽度而改变*/</span></div><div class="line"><span class="selector-tag">float</span><span class="selector-pseudo">:left</span>;<span class="comment">/*三栏都浮动，若父元素不浮动，则溢出*/</span></div></pre></td></tr></table></figure></p>
 <p>2.三栏流动布局模式<br>HTML<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;div id=<span class="string">"main"</span>&gt;</div><div class="line">	&lt;div id=<span class="string">"left"</span>&gt;</div><div class="line">		&lt;div id=<span class="string">"left1"</span>&gt;&lt;/div&gt;</div><div class="line">		&lt;div id=<span class="string">"left2"</span>&gt;&lt;/div&gt;</div><div class="line">	&lt;/div&gt;</div><div class="line">	&lt;div id=<span class="string">"right"</span>&gt;&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure></p>
 <p>CSS<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#main</span></div><div class="line">&#123;</div><div class="line">	<span class="attribute">width</span>:auto;</div><div class="line">	<span class="attribute">float</span>: left;</div><div class="line">	<span class="attribute">background-color</span>: red;</div><div class="line">&#125;</div><div class="line"><span class="selector-id">#left</span></div><div class="line">&#123;</div><div class="line">	<span class="attribute">width</span>: <span class="number">100%</span>;</div><div class="line">	<span class="attribute">float</span>: left;</div><div class="line">	<span class="attribute">margin-right</span>:-<span class="number">120px</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-id">#left1</span></div><div class="line">&#123;</div><div class="line">	<span class="attribute">width</span>:<span class="number">200px</span>;</div><div class="line">	<span class="attribute">float</span>:left; </div><div class="line">	<span class="attribute">background</span>:white;</div><div class="line">&#125;</div><div class="line"><span class="selector-id">#left2</span></div><div class="line">&#123;</div><div class="line">	<span class="attribute">width</span>:auto;</div><div class="line">	<span class="attribute">background-color</span>: blue;</div><div class="line">	<span class="attribute">margin-right</span>:<span class="number">130px</span>;</div><div class="line">	<span class="attribute">margin-left</span>:<span class="number">210px</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-id">#right</span></div><div class="line">&#123;</div><div class="line">	<span class="attribute">float</span>: left;</div><div class="line">	<span class="attribute">width</span>: <span class="number">120px</span>;</div><div class="line">	<span class="attribute">background-color</span>: gray;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
@@ -114,7 +114,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/29/Three-Columns/" data-id="cj5q1cybo00067gi0mmmn1svi" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/07/29/Three-Columns/" data-id="cj5q2m8v30005a0i0nuznmh41" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/float/">float</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/position定位/">position定位</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/三栏流动布局/">三栏流动布局</a></li></ul>
@@ -171,7 +171,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/28/Music-Player/" data-id="cj5q1cybj00057gi0lorpahck" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/07/28/Music-Player/" data-id="cj5q2m8uu0002a0i05cz85vhp" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/audio标签/">audio标签</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/transform/">transform</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/小组件/">小组件</a></li></ul>
@@ -230,7 +230,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/28/Calculator/" data-id="cj5q1cyax00007gi0qilr3cnd" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/07/28/Calculator/" data-id="cj5q2m8uk0000a0i0z351u8ej" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/eval/">eval()</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/小组件/">小组件</a></li></ul>
@@ -277,7 +277,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/24/hello-world/" data-id="cj5q1cyb600027gi0e9csf754" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/03/24/hello-world/" data-id="cj5q2m8vg0006a0i0crh9w4vu" class="article-share-link">Share</a>
       
       
     </footer>
