@@ -63,6 +63,62 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Web-Page" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/07/31/Web-Page/" class="article-date">
+  <time datetime="2017-07-31T15:57:03.000Z" itemprop="datePublished">2017-07-31</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/HTML5/">HTML5</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/31/Web-Page/">Web Page</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="知识："><a href="#知识：" class="headerlink" title="知识："></a>知识：</h2><p>1.table标签</p>
+<ul>
+<li>给table加上边框<br>方法一：<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;table border=<span class="string">"1"</span>&gt;&lt;/table&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>方法二：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">table</span></div><div class="line">&#123;</div><div class="line">  <span class="attribute">border-right</span>:<span class="number">1px</span> solid gray;</div><div class="line">  <span class="attribute">border-bottom</span>:<span class="number">1px</span> solid gray;</div><div class="line">  <span class="attribute">text-align</span>:center;</div><div class="line">&#125; </div><div class="line"><span class="selector-tag">table</span> <span class="selector-tag">th</span>,<span class="selector-tag">td</span></div><div class="line">&#123;</div><div class="line">  <span class="attribute">border-left</span>:<span class="number">1px</span> solid gray;</div><div class="line">  <span class="attribute">border-top</span>:<span class="number">1px</span> solid gray;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<ul>
+<li>table中合并三栏<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;td colspan=<span class="string">"3"</span>&gt;&lt;/td&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>2.HTML5的figure标签<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;figure style=<span class="string">"box-shadow:0px 0px 10px #00aa77;"</span>&gt;</div><div class="line">  &lt;figcaption&gt;图片标题&lt;/figcaption&gt;</div><div class="line">  &lt;img src=<span class="string">"#"</span>&gt;</div><div class="line">&lt;/figure&gt;</div></pre></td></tr></table></figure></p>
+<p>3.HTML5的aside 标签<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;aside&gt; &lt;/aside&gt;</div></pre></td></tr></table></figure></p>
+<p>用作文章的侧栏</p>
+<p>4.轮播图框架<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">&lt;div id=<span class="string">"myCarousel"</span> class=<span class="string">"carousel slide"</span>&gt;</div><div class="line">  &lt;!-- 轮播（Carousel）指标 --&gt;</div><div class="line">  &lt;ol class=<span class="string">"carousel-indicators"</span>&gt;</div><div class="line">    &lt;li data-target=<span class="string">"#myCarousel"</span> data-slide-to=<span class="string">"0"</span> class=<span class="string">"active"</span>&gt;&lt;/li&gt;</div><div class="line">    &lt;li data-target=<span class="string">"#myCarousel"</span> data-slide-to=<span class="string">"1"</span>&gt;&lt;/li&gt;</div><div class="line">    &lt;li data-target=<span class="string">"#myCarousel"</span> data-slide-to=<span class="string">"2"</span>&gt;&lt;/li&gt;</div><div class="line">  &lt;/ol&gt;   </div><div class="line">  &lt;!-- 轮播（Carousel）项目 --&gt;</div><div class="line">  &lt;div class=<span class="string">"carousel-inner"</span> id=<span class="string">"carousel-page"</span>&gt;</div><div class="line">    &lt;div class=<span class="string">"item"</span>&gt;</div><div class="line">      &lt;p&gt;新世界/&lt;span&gt;01&lt;/span&gt;&lt;/p&gt;</div><div class="line">      &lt;a href=<span class="string">"#"</span>&gt;更多详情&lt;/a&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">    &lt;div class=<span class="string">"item"</span>&gt;</div><div class="line">      &lt;p&gt;新世界/&lt;span&gt;02&lt;/span&gt;&lt;/p&gt;</div><div class="line">      &lt;a href=<span class="string">"#"</span>&gt;更多详情&lt;/a&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">    &lt;div class=<span class="string">"item"</span>&gt;</div><div class="line">      &lt;p&gt;新世界/&lt;span&gt;03&lt;/span&gt;&lt;/p&gt;</div><div class="line">      &lt;a href=<span class="string">"#"</span>&gt;更多详情&lt;/a&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">  &lt;/div&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/07/31/Web-Page/" data-id="cj5sciiis00004wi0a698n0bd" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/页面-Awesome-Bootstrap-轮播/">页面 Awesome Bootstrap 轮播</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-Three-Columns" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/07/29/Three-Columns/" class="article-date">
@@ -120,7 +176,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/29/Three-Columns/" data-id="cj5q4n6le0000d4i04zkogeft" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/07/29/Three-Columns/" data-id="cj5schrsa0002wki05mhnndyy" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/float/">float</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/position定位/">position定位</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/三栏流动布局/">三栏流动布局</a></li></ul>
@@ -132,66 +188,9 @@
 
 
   
-    <article id="post-Music-Player" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/07/28/Music-Player/" class="article-date">
-  <time datetime="2017-07-28T13:49:31.000Z" itemprop="datePublished">2017-07-28</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/JavaScript/">JavaScript</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/28/Music-Player/">Music Player</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="音乐播放器功能："><a href="#音乐播放器功能：" class="headerlink" title="音乐播放器功能："></a>音乐播放器功能：</h2><ul>
-<li>添加，删除歌曲</li>
-<li>收藏，下载歌曲</li>
-<li>歌曲播放，暂停</li>
-</ul>
-<h1 id="知识："><a href="#知识：" class="headerlink" title="知识："></a>知识：</h1><p>1.利用audio标签显示播放条<br>controls：显示控制条（音量，下载等）<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;audio src=<span class="string">"song/hetuhuyan.mp3"</span> <span class="built_in">type</span>=<span class="string">"audio/mpeg"</span> controls id=<span class="string">"timerange"</span>&gt;您的浏览器不支持HTML 5的audio属性!&lt;/audio&gt;</div></pre></td></tr></table></figure></p>
-<p>2.小图标尽量利用雪碧图</p>
-<p>3.动画：自定义动画，持续5秒，速度线性，无限<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">animation</span>: <span class="selector-tag">rotateimg</span> 5<span class="selector-tag">s</span> <span class="selector-tag">linear</span> <span class="selector-tag">infinite</span>;</div><div class="line"><span class="comment">/*360旋转*/</span></div><div class="line">@<span class="keyword">keyframes</span> rotateimg</div><div class="line">&#123;</div><div class="line">    <span class="selector-tag">from</span>&#123;<span class="attribute">transform</span>: <span class="built_in">rotate</span>(0deg);&#125;</div><div class="line">    <span class="selector-tag">to</span>&#123;<span class="attribute">transform</span>: <span class="built_in">rotate</span>(360deg);&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>4.onclick事件<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">micpause.onclick=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	<span class="comment">//code</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>5.audio的js控制方法<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">timerange.play();<span class="comment">//控制音频播放</span></div><div class="line">timerange.pause();<span class="comment">//控制音频暂停</span></div><div class="line">timerange.ended<span class="comment">//判断是否播放结束，是则true</span></div><div class="line">timerange.currentTime<span class="comment">//获取进度条的当前时间</span></div><div class="line">timerange.duration<span class="comment">//获取进度条的总时间</span></div><div class="line">timerange.removeAttribute(<span class="string">'loop'</span>);<span class="comment">//移除audio的循环属性</span></div></pre></td></tr></table></figure></p>
-<h2 id="Notes"><a href="#Notes" class="headerlink" title="Notes"></a>Notes</h2><p>1.setInterval()与setTimeout()<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;,<span class="number">1000</span>);<span class="comment">//每隔1秒执行函数</span></div><div class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;,<span class="number">1000</span>);<span class="comment">//一秒后执行函数</span></div></pre></td></tr></table></figure></p>
-<p>2.如果lovelist里面有，则不再添加<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span>(lovelist.indexOf(timerange.src)==<span class="number">-1</span>)</div><div class="line">&#123;</div><div class="line">	lovelist.push(timerange.src);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>3.删除位于 index 的元素<br>先找出timerange.src在lovelist中的index<br>再利用splice(index,1)删除<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">lovelist.splice(lovelist.indexOf(timerange.src), <span class="number">1</span>);<span class="comment">//删除数组里面的索引值</span></div></pre></td></tr></table></figure></p>
-<p>4.prompt弹出确认框<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> addsongname=prompt(<span class="string">"添加的歌名（不能为空）："</span>,<span class="string">""</span>);</div></pre></td></tr></table></figure></p>
-<p>More info: <a href="https://github.com/zhongshanxian/Baidu-IFE-2017/tree/master/codes/JavaScript/musicplayer" target="_blank" rel="external">Music Player代码</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/28/Music-Player/" data-id="cj5q4n6lx0005d4i0k7zf9zv5" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/audio标签/">audio标签</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/transform/">transform</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/小组件/">小组件</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
   
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
     </nav>
   
 </section>
