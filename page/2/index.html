@@ -63,6 +63,75 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Three-Columns" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/07/29/Three-Columns/" class="article-date">
+  <time datetime="2017-07-29T14:26:37.000Z" itemprop="datePublished">2017-07-29</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/HTML-CSS/">HTML&CSS</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/29/Three-Columns/">Three Columns</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="知识："><a href="#知识：" class="headerlink" title="知识："></a>知识：</h2><h3 id="position的可选值"><a href="#position的可选值" class="headerlink" title="position的可选值"></a><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/position" target="_blank" rel="external">position的可选值</a></h3><p>1.相对定位元素relative：未脱离文档流，相对于元素当初在的位置的偏移<br>2.绝对定位元素absolute：脱离了文档流，绝对定位元素不占据空间。绝对定位元素相对于最近的非static祖先元素定位。当这样的祖先元素不存在时，则相对于根级容器定位。<br>3.固定定位fixed：盒子固定定位是相对于浏览器窗口而不是设置了相对定位的父元素。，滚动屏幕时仍固定在相同位置<br>4.粘性定位元素sticky：粘性定位是相对定位和固定定位的混合，粘性定位常用于定位字母列表的头部元素。<br>5.全局值：inherit; initial; unset;</p>
+<h3 id="relative与absolute使用"><a href="#relative与absolute使用" class="headerlink" title="relative与absolute使用"></a>relative与absolute使用</h3><p>父元素{<br>    position:realtive;<br>}<br>子元素{<br>    position:absolute;<br>    top:20px;<br>    right:10px;<br>}</p>
+<h3 id="float的可选值"><a href="#float的可选值" class="headerlink" title="float的可选值"></a><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float" target="_blank" rel="external">float的可选值</a></h3><p>其中文本和内联元素将环绕它被放置<br>1.left：必须在其包含块的左侧浮动。<br>2.right：必须浮动在其包含块的右侧。<br>3.none：该元素不能浮动<br>4.inline-start：元素必须在其包含块的起始侧浮动。那是左边的ltr脚本，右边是rtl脚本。<br>5.inline-end：元素必须在其包含块的末端浮动。这是右边的ltr脚本，左边是rtl脚本。<br>6.全局值：inherit; initial; unset;<br>7.清除浮标：</p>
+<ul>
+<li><p>clear both：在容器的末尾添加一个空标签，设置CSS</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.boxlast</span>&#123;</div><div class="line">	<span class="attribute">clear</span>:both;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>overflow:auto:在父元素中设置CSS </p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.boxpar</span>&#123;</div><div class="line">	<span class="attribute">overflow</span>:auto;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>clearfix:在父元素中设置CSS</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">.boxpar:before,</div><div class="line">.boxpar:after &#123;</div><div class="line">  content: "";</div><div class="line">  display: table;/*创建一个匿名的“table-cell”元素*/</div><div class="line">&#125;</div><div class="line">.boxpar:after &#123;</div><div class="line">  clear: both;/*防止子元素的底部的外边距塌陷*/</div><div class="line">&#125;</div><div class="line">.boxpar&#123;/*IE6和7*/</div><div class="line">  *zoom: 1;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><a href="http://www.w3cplus.com/css/advanced-html-css-lesson2-detailed-css-positioning.html" target="_blank" rel="external">more info</a><br><a href="https://github.com/zhongshanxian/SUM/blob/master/test/floatposition.html" target="_blank" rel="external">示例代码</a></p>
+<h3 id="元素垂直居中"><a href="#元素垂直居中" class="headerlink" title="元素垂直居中"></a>元素垂直居中</h3><p>常用<br>1.文本水平居中:<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">text-align</span><span class="selector-pseudo">:center</span>;</div></pre></td></tr></table></figure></p>
+<p>2.文本垂直居中:<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">height</span><span class="selector-pseudo">:100px</span>;</div><div class="line"><span class="selector-tag">line-height</span><span class="selector-pseudo">:100px</span>;</div></pre></td></tr></table></figure></p>
+<p>3.盒子水平居中：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">margin</span><span class="selector-pseudo">:0</span> <span class="selector-tag">auto</span>;</div></pre></td></tr></table></figure></p>
+<p>4.盒子垂直居中：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.parent</span> &#123;</div><div class="line">  <span class="attribute">position</span>: relative;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.child</span> &#123;</div><div class="line">  <span class="attribute">position</span>: absolute;</div><div class="line">  <span class="attribute">top</span>: <span class="number">50%</span>;</div><div class="line">  <span class="attribute">top</span>: <span class="number">50%</span>;</div><div class="line">  <span class="attribute">transform</span>: <span class="built_in">translateY</span>(-50%);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>5.盒子垂直水平都居中：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.parent</span> &#123;</div><div class="line">  <span class="attribute">position</span>: relative;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.child</span> &#123;</div><div class="line">  <span class="attribute">position</span>: absolute;</div><div class="line">  <span class="attribute">top</span>: <span class="number">50%</span>;</div><div class="line">  <span class="attribute">left</span>: <span class="number">50%</span>;</div><div class="line">  <span class="attribute">transform</span>: <span class="built_in">translate</span>(-50%, -50%);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><a href="https://css-tricks.com/centering-css-complete-guide/" target="_blank" rel="external">更多元素垂直居中的方法</a></p>
+<h2 id="Notes："><a href="#Notes：" class="headerlink" title="Notes："></a>Notes：</h2><p>1.三栏的父元素，不能直接规定width<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">width</span><span class="selector-pseudo">:auto</span>;<span class="comment">/*根据里面的三栏宽度而改变*/</span></div><div class="line"><span class="selector-tag">float</span><span class="selector-pseudo">:left</span>;<span class="comment">/*三栏都浮动，若父元素不浮动，则溢出*/</span></div></pre></td></tr></table></figure></p>
+<p>2.三栏流动布局模式<br>HTML<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;div id=<span class="string">"main"</span>&gt;</div><div class="line">	&lt;div id=<span class="string">"left"</span>&gt;</div><div class="line">		&lt;div id=<span class="string">"left1"</span>&gt;&lt;/div&gt;</div><div class="line">		&lt;div id=<span class="string">"left2"</span>&gt;&lt;/div&gt;</div><div class="line">	&lt;/div&gt;</div><div class="line">	&lt;div id=<span class="string">"right"</span>&gt;&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure></p>
+<p>CSS<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#main</span></div><div class="line">&#123;</div><div class="line">	<span class="attribute">width</span>:auto;</div><div class="line">	<span class="attribute">float</span>: left;</div><div class="line">	<span class="attribute">background-color</span>: red;</div><div class="line">&#125;</div><div class="line"><span class="selector-id">#left</span></div><div class="line">&#123;</div><div class="line">	<span class="attribute">width</span>: <span class="number">100%</span>;</div><div class="line">	<span class="attribute">float</span>: left;</div><div class="line">	<span class="attribute">margin-right</span>:-<span class="number">120px</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-id">#left1</span></div><div class="line">&#123;</div><div class="line">	<span class="attribute">width</span>:<span class="number">200px</span>;</div><div class="line">	<span class="attribute">float</span>:left; </div><div class="line">	<span class="attribute">background</span>:white;</div><div class="line">&#125;</div><div class="line"><span class="selector-id">#left2</span></div><div class="line">&#123;</div><div class="line">	<span class="attribute">width</span>:auto;</div><div class="line">	<span class="attribute">background-color</span>: blue;</div><div class="line">	<span class="attribute">margin-right</span>:<span class="number">130px</span>;</div><div class="line">	<span class="attribute">margin-left</span>:<span class="number">210px</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-id">#right</span></div><div class="line">&#123;</div><div class="line">	<span class="attribute">float</span>: left;</div><div class="line">	<span class="attribute">width</span>: <span class="number">120px</span>;</div><div class="line">	<span class="attribute">background-color</span>: gray;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>3.首行缩进<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">text-indent</span><span class="selector-pseudo">:2em</span>;</div></pre></td></tr></table></figure></p>
+<p>4.小屏显示滚动条<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">@<span class="keyword">media</span> only screen and (max-width:<span class="number">959px</span>)</div><div class="line">&#123;</div><div class="line">  <span class="selector-tag">body</span></div><div class="line">  &#123;</div><div class="line">    <span class="attribute">overflow-x</span>:scroll;</div><div class="line">    <span class="attribute">width</span>:<span class="number">944px</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><a href="https://github.com/zhongshanxian/Baidu-IFE-2017/blob/master/codes/HTML%26CSS/task3-three-columns.html" target="_blank" rel="external">Three Columns代码</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/07/29/Three-Columns/" data-id="cj5t8ipcq0000cki0rt2z5ay8" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/float/">float</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/position定位/">position定位</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/三栏流动布局/">三栏流动布局</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-Music-Player" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/07/28/Music-Player/" class="article-date">
@@ -108,69 +177,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/28/Music-Player/" data-id="cj5sv3r6a0002pki0ojox7bda" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/07/28/Music-Player/" data-id="cj5t8ipd80005cki0ntvg22tf" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/audio标签/">audio标签</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/transform/">transform</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/小组件/">小组件</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Calculator" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/07/28/Calculator/" class="article-date">
-  <time datetime="2017-07-28T13:15:36.000Z" itemprop="datePublished">2017-07-28</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/JavaScript/">JavaScript</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/28/Calculator/">Calculator</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="计算器使用："><a href="#计算器使用：" class="headerlink" title="计算器使用："></a>计算器使用：</h2><ul>
-<li>AC：清零</li>
-<li>CE：删除最后一个是数字</li>
-<li>OFF：关闭计算器，并且可实现随机颜色变化（Math.floor(Math.random()*7)与颜色数组实现）</li>
-</ul>
-<h2 id="功能："><a href="#功能：" class="headerlink" title="功能："></a>功能：</h2><ul>
-<li>不可连续输入多个运算方式</li>
-<li>具有排查错误的功能（*9=输入错误）</li>
-</ul>
-<h2 id="Notes"><a href="#Notes" class="headerlink" title="Notes"></a>Notes</h2><ul>
-<li><p>innerHTML与innerText的区别:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">innerHTML//也就是从对象的起始位置到终止位置的全部内容,包括Html标签。</div><div class="line">innerText//从起始位置到终止位置的内容, 但它去除Html标签</div></pre></td></tr></table></figure>
-</li>
-<li><p>event.srcElement:当前事件的源<br>firefox 下的 event.target = IE 下的 event.srcElement</p>
-</li>
-</ul>
-<p>More info: <a href="https://github.com/zhongshanxian/SUM/tree/master/calculator" target="_blank" rel="external">Calculator代码</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/28/Calculator/" data-id="cj5sv3r600000pki0q2c31eo8" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/eval/">eval()</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/小组件/">小组件</a></li></ul>
 
     </footer>
   </div>
