@@ -15,7 +15,7 @@
 <meta property="og:description" content="1.使用calc函数1width: calc(16.66% - 20px);/*注意-号前后都要空格*/
 2.box-sizing12box-sizing: border-box;/*为元素指定的任何内边距和边框都将在已设定的宽度和高度内进行绘制*/box-sizing:content-box;/*宽度和高度分别应用到元素的内容框。*/
 3.移动端HTML 移动端显示1&amp;lt;meta conte">
-<meta property="og:updated_time" content="2017-08-01T06:21:42.338Z">
+<meta property="og:updated_time" content="2017-08-01T07:02:50.552Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="flexbox">
 <meta name="twitter:description" content="1.使用calc函数1width: calc(16.66% - 20px);/*注意-号前后都要空格*/
@@ -103,18 +103,16 @@
 <li>display<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.box</span> &#123;</div><div class="line">	<span class="attribute">display</span>:flex | inline-flex | -webkit-flex;</div><div class="line">	<span class="comment">/*容器/行内元素/Webkit内核的浏览器*/</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
 </ul>
-<blockquote>
-<p>注意，设为Flex布局以后，子元素的float、clear和vertical-align属性将失效。</p>
+<p><strong> 注意 </strong>：设为Flex布局以后，子元素的float、clear和vertical-align属性将失效。</p>
 <ul>
 <li>容器的属性<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.box</span> &#123;</div><div class="line">	<span class="attribute">flex-direction</span>: row | row-reverse | column | column-reverse;</div><div class="line">	<span class="comment">/*</span></div><div class="line">	row（默认值）：主轴为水平方向，起点在左端。</div><div class="line">	row-reverse：主轴为水平方向，起点在右端。</div><div class="line">	column：主轴为垂直方向，起点在上沿。</div><div class="line">	column-reverse：主轴为垂直方向，起点在下沿。</div><div class="line">	*/</div><div class="line"></div><div class="line">	<span class="attribute">flex-wrap</span>: nowrap | wrap | wrap-reverse;</div><div class="line">	<span class="comment">/*</span></div><div class="line">	nowrap（默认）：不换行。</div><div class="line">	wrap：换行，往下换行。</div><div class="line">	wrap-reverse：换行，往上换行。</div><div class="line">	*/</div><div class="line"></div><div class="line">	<span class="attribute">flex-flow</span>: &lt;flex-direction&gt; || &lt;flex-wrap&gt;;</div><div class="line">	<span class="comment">/*</span></div><div class="line">	flex-direction属性和flex-wrap属性的简写形式，默认值为row nowrap</div><div class="line">	*/</div><div class="line"></div><div class="line">	<span class="attribute">justify-content</span>: flex-start | flex-end | center | space-between | space-around;</div><div class="line">	<span class="comment">/*主轴为从左到右</span></div><div class="line">	flex-start（默认值）：左对齐</div><div class="line">	flex-end：右对齐</div><div class="line">	center： 居中</div><div class="line">	space-between：两端对齐，项目之间的间隔都相等，项目与边框的间隔为0。</div><div class="line">	space-around：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。</div><div class="line">	*/</div><div class="line"></div><div class="line">	<span class="attribute">align-items</span>: flex-start | flex-end | center | baseline | stretch;</div><div class="line">	<span class="comment">/*交叉轴从上到下</span></div><div class="line">	flex-start：交叉轴的起点对齐。</div><div class="line">	flex-end：交叉轴的终点对齐。</div><div class="line">	center：交叉轴的中点对齐。</div><div class="line">	baseline: 项目的第一行文字的基线对齐。</div><div class="line">	stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。</div><div class="line">	*/</div><div class="line"></div><div class="line">	<span class="attribute">align-content</span>: flex-start | flex-end | center | space-between | space-around | stretch;</div><div class="line">	<span class="comment">/*</span></div><div class="line">	flex-start：与交叉轴的起点对齐。</div><div class="line">	flex-end：与交叉轴的终点对齐。</div><div class="line">	center：与交叉轴的中点对齐。</div><div class="line">	space-between：与交叉轴两端对齐，轴线之间的间隔平均分布。</div><div class="line">	space-around：每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍。</div><div class="line">	stretch（默认值）：轴线占满整个交叉轴。</div><div class="line">	*/</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
 </ul>
-</blockquote>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/08/01/flexbox/" data-id="cj5t8ipeg000wcki0t3ylon4w" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/08/01/flexbox/" data-id="cj5t8lki70007u0i0sunfmv67" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/弹性盒子-移动端/">弹性盒子 移动端</a></li></ul>
